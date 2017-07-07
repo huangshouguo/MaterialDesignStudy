@@ -8,10 +8,14 @@ import android.support.v4.view.GravityCompat
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import com.example.hsg.meterialdesignstudy.R
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.uiThread
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -35,6 +39,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val navigationView = findViewById(R.id.nav_view) as NavigationView
         navigationView.setNavigationItemSelectedListener(this)
+
+
+        val recyclerView = findViewById(R.id.recyclerView) as RecyclerView;
+        recyclerView.layoutManager = LinearLayoutManager(this);
+
+        doAsync {
+            val response = CallApi(LvjinApiService().getGroupRecomment()).run()
+            uiThread {
+                recyclerView.adapter = GroupLoanItemAdapter(response.items)
+            }
+        }
     }
 
     override fun onBackPressed() {

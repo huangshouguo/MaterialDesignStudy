@@ -3,4 +3,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+
+    <color name="color_black_main">#313131</color>
+    <color name="color_blue_main">#1559d7</color>
+
+    <color name="color_gray_main">#454545</color>
+    <color name="color_gray_light">#AAA</color>
+
+    <color name="color_divider_solid_line">#EEE</color>
+    <color name="color_divider_dash_line">#EEE</color>
 </resources>
