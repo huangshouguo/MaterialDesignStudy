@@ -27,7 +27,11 @@
         <activity android:name=".animator.AnimatorRevealActivity" />
         <activity
             android:name=".animator.AnimatorReveal2Activity"
-            android:theme="@style/AppTheme.NoAnimator"/>
+            android:theme="@style/AppTheme.NoAnimator" />
+        <activity android:name=".animator.AnimatorTransitionSlideActivity" />
+        <activity android:name=".animator.AnimatorTransitionActivity" />
+        <activity android:name=".animator.AnimatorTransitionFadeActivity" />
+        <activity android:name=".animator.AnimatorTransitionExplodeActivity"></activity>
     </application>
 
 </manifest>

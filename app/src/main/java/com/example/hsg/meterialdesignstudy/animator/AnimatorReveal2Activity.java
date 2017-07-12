@@ -58,13 +58,12 @@ public class AnimatorReveal2Activity extends BaseActivity {
         float endRadius = isReveal ? radius : 0;
 
         Animator animator = ViewAnimationUtils.createCircularReveal(this.rootView, cx, cy, startRadius, endRadius);
-        animator.setDuration(1000);
+        animator.setDuration(getResources().getInteger(R.integer.animator_duration));
 
         if (!isReveal) {
             animator.addListener(new Animator.AnimatorListener() {
                 @Override
                 public void onAnimationStart(Animator animator) {
-
                 }
 
                 @Override
@@ -74,7 +73,6 @@ public class AnimatorReveal2Activity extends BaseActivity {
 
                 @Override
                 public void onAnimationCancel(Animator animator) {
-
                 }
 
                 @Override

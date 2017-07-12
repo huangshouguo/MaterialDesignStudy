@@ -84,6 +84,6 @@ public class AnimatorRevealActivity extends BaseActivity implements View.OnClick
                 }
             });
         }
-        animator.setDuration(1000).start();
+        animator.setDuration(getResources().getInteger(R.integer.animator_duration)).start();
     }
 }

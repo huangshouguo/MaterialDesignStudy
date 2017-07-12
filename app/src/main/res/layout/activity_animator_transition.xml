@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolbarStyle"
+        app:title="AnimatorTransition" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_fade_code"
+                style="@style/ButtonStyle"
+                android:text="fade code" />
+
+            <Button
+                android:id="@+id/btn_fade_xml"
+                style="@style/ButtonStyle"
+                android:text="fade xml" />
+
+            <Button
+                android:id="@+id/btn_slide_code"
+                style="@style/ButtonStyle"
+                android:text="slide code" />
+
+            <Button
+                android:id="@+id/btn_slide_xml"
+                style="@style/ButtonStyle"
+                android:text="slide xml" />
+
+            <Button
+                android:id="@+id/btn_explode_code"
+                style="@style/ButtonStyle"
+                android:text="explode code" />
+
+            <Button
+                android:id="@+id/btn_explode_xml"
+                style="@style/ButtonStyle"
+                android:text="explode xml" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
