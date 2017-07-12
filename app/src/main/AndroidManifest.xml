@@ -41,6 +41,7 @@
         <activity
             android:name=".animator.AnimatorShareActivity"
             android:theme="@style/AppTheme.CustomAnimator" />
+        <activity android:name=".animator.AnimatorPathActivity"></activity>
     </application>
 
 </manifest>

@@ -43,6 +43,7 @@ public class AnimatorHomeActivity extends BaseActivity implements View.OnClickLi
                 AnimatorShareActivity.startAction(this, findViewById(R.id.btn_share));
                 break;
             case R.id.btn_path:
+                AnimatorPathActivity.startAction(this);
                 break;
         }
     }

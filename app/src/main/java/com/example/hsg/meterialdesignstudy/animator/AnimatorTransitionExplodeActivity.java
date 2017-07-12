@@ -38,7 +38,6 @@ public class AnimatorTransitionExplodeActivity extends BaseActivity {
     }
 
     private void setupTransitionAnimator() {
-
         Transition transition = null;
         if (this.isEnableXml) {
             transition = TransitionInflater.from(this).inflateTransition(R.transition.explode);

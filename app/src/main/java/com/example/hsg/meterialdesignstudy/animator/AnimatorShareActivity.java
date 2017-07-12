@@ -11,7 +11,6 @@ import com.example.hsg.meterialdesignstudy.R;
 
 public class AnimatorShareActivity extends BaseActivity {
 
-
     public static void startAction(Activity context, View view) {
         Intent intent = new Intent(context, AnimatorShareActivity.class);
         ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(context, view, context.getString(R.string.share_elements_name));

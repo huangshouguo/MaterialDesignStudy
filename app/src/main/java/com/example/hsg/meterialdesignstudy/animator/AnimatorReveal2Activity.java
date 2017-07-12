@@ -68,6 +68,7 @@ public class AnimatorReveal2Activity extends BaseActivity {
 
                 @Override
                 public void onAnimationEnd(Animator animator) {
+                    rootView.setVisibility(View.GONE);
                     finish();
                 }
 

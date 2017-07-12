@@ -15,7 +15,6 @@ public class AnimatorTransitionActivity extends BaseActivity implements View.OnC
         context.startActivity(intent);
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
