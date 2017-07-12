@@ -9,5 +9,5 @@
         style="@style/ToolbarStyle"
         app:title="AnimatorTransitionFade" />
 
-    <include layout="@layout/content_common" />
+    <include layout="@layout/common_single_content" />
 </LinearLayout>
