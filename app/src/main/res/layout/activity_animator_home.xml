@@ -6,7 +6,6 @@
     android:background="#fff"
     android:orientation="vertical">
 
-
     <android.support.v7.widget.Toolbar
         style="@style/ToolbarStyle"
         app:title="AnimatorHome" />

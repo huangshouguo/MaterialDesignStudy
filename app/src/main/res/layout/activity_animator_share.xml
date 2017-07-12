@@ -17,9 +17,9 @@
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            style="@style/ButtonStyle.Circle"
             android:background="@drawable/ic_circle_green"
+            android:text="share"
             android:transitionName="@string/share_elements_name" />
 
         <TextView
