@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        style="@style/ToolbarStyle"
+        app:title="AnimatorHome" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_feedback"
+                style="@style/ButtonStyle.Circle"
+                android:background="@drawable/ic_circle_red"
+                android:text="feedback" />
+
+            <Button
+                android:id="@+id/btn_reveal"
+                style="@style/ButtonStyle.Circle"
+                android:background="@drawable/ic_circle_blue"
+                android:text="reveal" />
+
+            <Button
+                android:id="@+id/btn_transition"
+                style="@style/ButtonStyle.Circle"
+                android:background="@drawable/ic_circle_pink"
+                android:text="transition" />
+
+            <Button
+                android:id="@+id/btn_share"
+                style="@style/ButtonStyle.Circle"
+                android:background="@drawable/ic_circle_green"
+                android:text="share" />
+
+            <Button
+                android:id="@+id/btn_path"
+                style="@style/ButtonStyle.Circle"
+                android:background="@drawable/ic_circle_purple"
+                android:text="path" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

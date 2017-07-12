@@ -10,9 +10,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.view.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/title_activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".component.ComponentHomeActivity" />
+        <activity android:name=".animator.AnimatorHomeActivity" />
+        <activity android:name=".apply.ApplyHomeActivity" />
+        <activity android:name=".animator.AnimatorFeedbackActivity"></activity>
     </application>
 
 </manifest>
