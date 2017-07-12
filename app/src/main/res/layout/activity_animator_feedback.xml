@@ -10,34 +10,50 @@
         style="@style/ToolbarStyle"
         app:title="Animator Feedback" />
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:background="?attr/selectableItemBackground"
-        android:text="selectableItemBackground + disClickable" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:background="?attr/selectableItemBackground"
-        android:clickable="true"
-        android:text="selectableItemBackground" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:clickable="true"
-        android:text="selectableItemBackgroundBorderless" />
+            <TextView
+                style="@style/TextViewStyle"
+                android:background="?attr/selectableItemBackground"
+                android:text="selectableItemBackground + disClickable" />
 
+            <TextView
+                style="@style/TextViewStyle"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:text="selectableItemBackground" />
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:background="@drawable/ripple_mask"
-        android:clickable="true"
-        android:text="RippleMask" />
+            <TextView
+                style="@style/TextViewStyle"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:text="selectableItemBackgroundBorderless" />
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:background="@drawable/ripple"
-        android:clickable="true"
-        android:text="Ripple" />
+            <TextView
+                style="@style/TextViewStyle"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:text="Ripple" />
 
+            <TextView
+                style="@style/TextViewStyle"
+                android:background="@drawable/ripple_mask"
+                android:clickable="true"
+                android:text="RippleMask" />
+
+            <TextView
+                style="@style/TextViewStyle"
+                android:background="@drawable/ripple_child"
+                android:clickable="true"
+                android:text="RippleChild"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

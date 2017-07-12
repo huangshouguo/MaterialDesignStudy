@@ -23,7 +23,11 @@
         <activity android:name=".component.ComponentHomeActivity" />
         <activity android:name=".animator.AnimatorHomeActivity" />
         <activity android:name=".apply.ApplyHomeActivity" />
-        <activity android:name=".animator.AnimatorFeedbackActivity"></activity>
+        <activity android:name=".animator.AnimatorFeedbackActivity" />
+        <activity android:name=".animator.AnimatorRevealActivity" />
+        <activity
+            android:name=".animator.AnimatorReveal2Activity"
+            android:theme="@style/AppTheme.NoAnimator"/>
     </application>
 
 </manifest>
