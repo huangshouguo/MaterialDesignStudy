@@ -5,7 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".App"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -41,7 +43,10 @@
         <activity
             android:name=".animator.AnimatorShareActivity"
             android:theme="@style/AppTheme.CustomAnimator" />
-        <activity android:name=".animator.AnimatorPathActivity"></activity>
+        <activity android:name=".animator.AnimatorPathActivity" />
+        <activity android:name=".component.AppBarDemo1Activity" />
+        <activity android:name=".component.AppBarDemo2Activity" />
+        <activity android:name=".component.AppBarDemo3Activity" />
     </application>
 
 </manifest>

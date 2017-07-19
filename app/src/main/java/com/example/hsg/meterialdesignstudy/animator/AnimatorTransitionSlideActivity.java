@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.transition.Slide;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
@@ -11,6 +13,7 @@ import android.view.Gravity;
 
 import com.example.hsg.meterialdesignstudy.BaseActivity;
 import com.example.hsg.meterialdesignstudy.R;
+import com.example.hsg.meterialdesignstudy.data.DataListAdapter;
 
 public class AnimatorTransitionSlideActivity extends BaseActivity {
 
@@ -28,6 +31,10 @@ public class AnimatorTransitionSlideActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animator_transition_slide);
+
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new DataListAdapter());
 
         this.isEnableXml = getIntent().getBooleanExtra(ENABLE_XML_TAG, false);
     }

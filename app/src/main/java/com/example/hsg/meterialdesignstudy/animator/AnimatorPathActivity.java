@@ -1,5 +1,6 @@
 package com.example.hsg.meterialdesignstudy.animator;
 
+import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +8,7 @@ import android.graphics.Path;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 import android.view.animation.PathInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -97,8 +99,15 @@ public class AnimatorPathActivity extends BaseActivity implements View.OnClickLi
         path.cubicTo(this.targetX, this.targetY, this.mediumX, this.mediumY, this.originX, this.originY);
 
         ObjectAnimator animator = ObjectAnimator.ofFloat(this.imageView, View.X, View.Y, path);
-        animator.setInterpolator(new PathInterpolator(0f, 0.1f, 1f, 1f));
-        animator.setDuration(getResources().getInteger(R.integer.animator_duration));
-        animator.start();
+//        animator.setInterpolator(new PathInterpolator(0f, 0.1f, 1f, 1f));
+//        animator.setDuration(getResources().getInteger(R.integer.animator_duration));
+//        animator.start();
+
+        ObjectAnimator animator1 = ObjectAnimator.ofFloat(this.imageView, "alpha", 0f, 1f);
+
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.playTogether(animator, animator1);
+        animatorSet.setInterpolator(new LinearInterpolator());
+        animatorSet.setDuration(1000).start();
     }
 }
