@@ -44,11 +44,11 @@ public class AnimatorPathActivity extends BaseActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animator_path);
 
-        this.toolbar = findViewById(R.id.toolbar);
-        this.imageView = findViewById(R.id.image_view);
+        this.toolbar = (Toolbar) findViewById(R.id.toolbar);
+        this.imageView = (ImageView) findViewById(R.id.image_view);
 
-        this.btnStart = findViewById(R.id.btn_start);
-        this.btnBack = findViewById(R.id.btn_back);
+        this.btnStart = (Button) findViewById(R.id.btn_start);
+        this.btnBack = (Button) findViewById(R.id.btn_back);
 
         this.btnStart.setOnClickListener(this);
         this.btnBack.setOnClickListener(this);

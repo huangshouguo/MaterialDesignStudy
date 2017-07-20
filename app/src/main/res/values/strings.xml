@@ -9,4 +9,5 @@
 
 
     <string name="share_elements_name">share_elements</string>
+    <string name="title_activity_navigation_view">NavigationViewActivity</string>
 </resources>

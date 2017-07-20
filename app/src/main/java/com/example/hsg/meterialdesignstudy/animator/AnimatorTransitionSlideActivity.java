@@ -32,7 +32,7 @@ public class AnimatorTransitionSlideActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_animator_transition_slide);
 
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new DataListAdapter());
 

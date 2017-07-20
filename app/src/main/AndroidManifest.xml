@@ -47,6 +47,10 @@
         <activity android:name=".component.AppBarDemo1Activity" />
         <activity android:name=".component.AppBarDemo2Activity" />
         <activity android:name=".component.AppBarDemo3Activity" />
+        <activity
+            android:name=".component.NavigationViewActivity"
+            android:label="@string/title_activity_navigation_view"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

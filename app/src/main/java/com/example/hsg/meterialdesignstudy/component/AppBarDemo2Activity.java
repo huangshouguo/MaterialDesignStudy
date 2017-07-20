@@ -22,7 +22,7 @@ public class AppBarDemo2Activity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app_bar_demo2);
 
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new DataListAdapter());
     }
