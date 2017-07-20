@@ -24,6 +24,7 @@ public class ComponentHomeActivity extends BaseActivity implements View.OnClickL
         findViewById(R.id.btn_app_bar_demo2).setOnClickListener(this);
         findViewById(R.id.btn_app_bar_demo3).setOnClickListener(this);
         findViewById(R.id.btn_navigation).setOnClickListener(this);
+        findViewById(R.id.btn_tab).setOnClickListener(this);
 
     }
 
@@ -41,6 +42,9 @@ public class ComponentHomeActivity extends BaseActivity implements View.OnClickL
                 break;
             case R.id.btn_navigation:
                 NavigationViewActivity.startAction(this);
+                break;
+            case R.id.btn_tab:
+                TabViewActivity.startAction(this);
                 break;
         }
     }
