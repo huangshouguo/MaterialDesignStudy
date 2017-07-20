@@ -44,24 +44,14 @@
                 android:text="Tab" />
 
             <Button
-                android:id="@+id/btn_float_button"
-                style="@style/ButtonStyle"
-                android:text="FloatButton" />
-
-            <Button
-                android:id="@+id/btn_snackbar"
-                style="@style/ButtonStyle"
-                android:text="Snackbar" />
-
-            <Button
-                android:id="@+id/btn_text"
-                style="@style/ButtonStyle"
-                android:text="Text" />
-
-            <Button
                 android:id="@+id/btn_bottom_sheet"
                 style="@style/ButtonStyle"
                 android:text="BottomSheetDialog" />
+
+            <Button
+                android:id="@+id/btn_views"
+                style="@style/ButtonStyle"
+                android:text="Views" />
 
         </LinearLayout>
     </ScrollView>
