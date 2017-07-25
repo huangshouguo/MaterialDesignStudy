@@ -46,7 +46,7 @@
             <Button
                 android:id="@+id/btn_bottom_sheet"
                 style="@style/ButtonStyle"
-                android:text="BottomSheetDialog" />
+                android:text="BottomSheet" />
 
             <Button
                 android:id="@+id/btn_views"

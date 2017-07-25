@@ -55,6 +55,7 @@
         <activity
             android:name=".component.ViewsActivity"
             android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".component.BottomSheetActivity"></activity>
     </application>
 
 </manifest>
